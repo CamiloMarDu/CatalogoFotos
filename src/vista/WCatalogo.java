@@ -27,10 +27,13 @@ public class WCatalogo extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        btnBuscarDirectorio = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Busque el directorio de imágenes:");
+
+        btnBuscarDirectorio.setText("BUSCAR DIRECTORIO");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -39,14 +42,18 @@ public class WCatalogo extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(52, 52, 52)
                 .addComponent(jLabel1)
-                .addContainerGap(380, Short.MAX_VALUE))
+                .addGap(83, 83, 83)
+                .addComponent(btnBuscarDirectorio)
+                .addContainerGap(154, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addComponent(jLabel1)
-                .addContainerGap(359, Short.MAX_VALUE))
+                .addGap(39, 39, 39)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(btnBuscarDirectorio))
+                .addContainerGap(355, Short.MAX_VALUE))
         );
 
         pack();
@@ -88,6 +95,7 @@ public class WCatalogo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btnBuscarDirectorio;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
